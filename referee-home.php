@@ -6,7 +6,9 @@
   </head>
   <body>
     <h1>RefereeMe</h1>
-    <p>Database connection - <?php include 'connect.php'; ?></p>
+    <p>Database connection - <?php include 'php/connect.php'; ?></p>
+
+    <p>Student in db - <?php include 'select_students.php'; ?></p>
 
   </body>
 </html>
