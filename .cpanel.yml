@@ -3,5 +3,4 @@ deployment:
  tasks:
   - export DEPLOYPATH=/home/izbsddgh/public_html/
   - /bin/cp index.html $DEPLOYPATH
-  - /bin/cp css/master.css $DEPLOYPATH
-  - /bin/cp css/learnJCUNav.css $DEPLOYPATH
+  - /bin/cp css/ $DEPLOYPATH
