@@ -1,5 +1,5 @@
 <?php
-require 'connect.php';
+require ('connect.php');
 
 $sql = "SELECT * FROM students;"
 $result = $conn->query($sql);
