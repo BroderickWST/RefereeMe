@@ -5,6 +5,7 @@
     <title>RefereeMe | Home</title>
   </head>
   <body>
+    <h1>RefereeMe</h1>
     <p>Database connection - <?php include 'connect.php'; ?></p>
 
   </body>
