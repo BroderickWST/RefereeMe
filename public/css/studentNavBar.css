@@ -1,0 +1,89 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.logoBox {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #1d1d1d;
+}
+
+#jcu-logo {
+  height: auto;
+  width: 150px;
+  display: block;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #262626;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #e5e5e5;
+    display: block;
+}
+
+i.fa.fa-address-card.fa-2x {
+    color: gold;
+}
+
+.fa {
+    left: .75rem;
+    display: inline-block;
+    width: 1.3em;
+    font-size: 40px;
+    line-height: 1.1;
+    margin-right: .3125rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sidenav a:hover {
+    background-color: #1b1b1b;
+}
+
+.header {
+  position: relative;
+    z-index: inherit;
+    width: auto;
+    height: 124px;
+    text-align: left;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.header-title {
+  padding-left: 300px;
+  position: absolute;
+  top: 30px;
+}
+
+.main {
+    overflow: scroll;
+    background-color: #f8f8f8;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+  padding-left: 300px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
