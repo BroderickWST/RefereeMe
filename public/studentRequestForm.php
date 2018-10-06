@@ -50,8 +50,7 @@
         <input type="text" class="formInput" id="contact-number" name="contactNumber" minlength="2" required>
       </div><br><br>
       <label for="extra-detail">Please any extra details as necessary:</label><br><br>
-      <textarea name="extraDetails" class="formInput" id="extra-detail" minlength="2" rows="10" cols="100">
-      </textarea><br><br>
+      <textarea name="extraDetails" class="formInput" id="extra-detail" minlength="2" rows="10" cols="100"></textarea><br><br>
 
 
       <button type="submit" class="form-button">Finish</button>

@@ -19,31 +19,6 @@
       <div class="section">
         <h2>*Student Name*'s Reference Request</h2>
         <label id="errorMsg"></label><br>
-
-        <!-- UNCOMMENT THE FOLLOWING, WHEN PAGE IS ABLE TO RECEIVE STUDENT REQUEST DATA -->
-        <!--
-        <div class="info-box">
-          <strong>Student details</strong>
-          <p>Name</p>
-          <p>Job Type: <?php echo $_POST["selectPosition"]; ?></p>
-          <div class="flex-div">
-            <div>
-              <p>Business: <? php echo $_POST["company"]; ?></p>
-              <p>Job Location: <?php echo $_POST["location"]; ?></p>
-              <p>Person of Contact: <?php echo $_POST["contactPerson"]; ?></p>
-              <p>Contact number: <?php echo $_POST["contactNumber"]; ?></p>
-            </div>
-            <div>
-              <p>Business: <? php echo $_POST["company"]; ?></p>
-              <p>Job Location: <?php echo $_POST["location"]; ?></p>
-              <p>Person of Contact: <?php echo $_POST["contactPerson"]; ?></p>
-              <p>Contact number: <?php echo $_POST["contactNumber"]; ?></p>
-            </div>
-          </div>
-          <p>Extra details: <?php echo $_POST["extraDetails"]; ?></p>
-        </div>
-        -->
-
         <div class="info-box">
           <strong>Student details</strong>
           <p>Name</p>

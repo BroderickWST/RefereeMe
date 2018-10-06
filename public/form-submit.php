@@ -27,6 +27,6 @@
         <button class="form-button"><a href="studentRequestForm.php">Go back</a></button>
 
     </div>
-
+</div>
   </body>
 </html>

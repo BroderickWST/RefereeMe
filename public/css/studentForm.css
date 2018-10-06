@@ -16,7 +16,7 @@ form {
   padding-bottom: 50px;
 }
 
-form > input{
+form > input[type=text]{
   width: 603px;
 }
 
@@ -35,6 +35,10 @@ input, select{
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
+}
+
+input[type=radio]{
+  margin: 5px 10px 10px 0px;
 }
 
 .form-button {
