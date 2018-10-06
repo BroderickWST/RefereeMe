@@ -24,7 +24,7 @@ class TableRows extends RecursiveIteratorIterator {
 
 try {
     // set the PDO error mode to exception
-    $stmt = $conn->prepare("SELECT id, name, degree FROM students");
+    $stmt = $conn->prepare("SELECT stu_id, name, degree FROM students");
     $stmt->execute();
     // echo "Connected successfully";
     // set the resulting array to associative

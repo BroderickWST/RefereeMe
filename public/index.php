@@ -20,6 +20,9 @@
       <button class="form-button" type="button" name="button">
         <a href="studentRequestForm.php">Student request</a>
       </button>
+      <button class="form-button" type="button" name="button">
+        <a href="lecturerRequestForm.php">Lecturer request</a>
+      </button>
 </div>
 
 </body>

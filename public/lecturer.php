@@ -19,6 +19,7 @@
         <button class="form-button" type="button" name="button">
           <a href="lecturerRequestForm.php">Barry Badrinath's request</a>
         </button>
+        <?php include 'php/select_students.php'; ?>
       </div>
     </div>
   </body>
