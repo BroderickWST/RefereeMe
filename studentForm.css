@@ -1,0 +1,56 @@
+.inline-form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#errorMsg {
+  color: red;
+}
+
+label {
+  margin: 5px 10px 5px 0;
+}
+
+form {
+  padding-bottom: 50px;
+}
+
+form > input[type=text]{
+  width: 603px;
+}
+
+select, textarea {
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.inline-form input {
+  width: 150px;
+}
+
+input, select{
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+input[type=radio]{
+  margin: 5px 10px 10px 0px;
+}
+
+.form-button {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.form-button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.form-button:hover {
+  background-color: #ddd;
+}
