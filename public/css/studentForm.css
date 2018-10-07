@@ -29,6 +29,31 @@ select, textarea {
   width: 150px;
 }
 
+.multiple-input {
+  margin: 5px 0 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  outline: none;
+}
+
+#business-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#business-list li {
+  float: left;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+#business-list li:hover {
+  background-color: #ddd;
+}
+
 input, select{
   vertical-align: middle;
   margin: 5px 10px 5px 0;
@@ -52,5 +77,15 @@ input[type=radio]{
 }
 
 .form-button:hover {
+  background-color: #ddd;
+}
+
+.fa-plus {
+  padding: 8px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.fa-plus:hover {
   background-color: #ddd;
 }
