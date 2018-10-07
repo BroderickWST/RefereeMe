@@ -23,7 +23,7 @@
         <label id="errorMsg"></label><br>
 
         <label for="select-position">What job are you applying for?</label><br><br>
-        <select size="1" id="select-position" name="selectPosition">
+        <select size="1" id="select-position" tabindex="1" name="selectPosition">
           <option value="Select Position">Select Position</option>
           <option value="Programmer">Programmer</option>
           <option value="Network Security">Network Security</option>
@@ -34,20 +34,20 @@
         </select><br><br>
 
         <label for="other-selection">If other, please specify</label><br>
-        <input type="text" class="formInput" id="other-selection" name="otherSelection"><br><br>
+        <input type="text" tabindex="2" class="formInput" id="other-selection" name="otherSelection"><br><br>
 
         <label for="company">What companies or businesses are you applying for?</label><br>
         <ul id="business-list" ?></ul>
 
-        <input type="text" placeholder="Business Name" class="multiple-input" id="company" name="company" >
-        <i class="fa fa-plus" onclick="newElement()"></i><br><br>
+        <input type="text" tabindex="3" placeholder="Business Name" class="multiple-input" id="company" name="company" >
+        <i class="fa fa-plus" tabindex="4" onkeypress="newElement()" onclick="newElement()"></i><br><br>
 
         <label for="extra-detail">Please any extra details as necessary:</label><br><br>
-        <textarea name="extraDetails" class="formInput" id="extra-detail" minlength="2" rows="10" cols="100"></textarea><br><br>
+        <textarea name="extraDetails" tabindex="5" class="formInput" id="extra-detail" minlength="2" rows="10" cols="100"></textarea><br><br>
 
 
-        <button type="submit" class="form-button">Finish</button>
-        <button class="form-button">Cancel</button>
+        <button type="submit" tabindex="6" class="form-button">Finish</button>
+        <button class="form-button" tabindex="7"><a href="index.php">Cancel</a></button>
       </form>
 
     </div>
