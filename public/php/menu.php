@@ -6,7 +6,7 @@ echo '
   </div>
   <a href="#"><i class="fa fa-user fa-2x"></i> Barry Badrinath</a>
   <a href="#"><i class="fa fa-globe fa-2x"></i> Activity Stream</a>
-  <a href="#"><i class="fa fa-address-card fa-2x"></i> RefereeMe</a>
+  <a href="http://rthosted55.com/"><i class="fa fa-address-card fa-2x"></i> RefereeMe</a>
   <a href="#"><i class="fa fa-book fa-2x"></i> Subjects</a>
   <a href="#"><i class="fa fa-users fa-2x"></i> Organisations</a>
   <a href="#"><i class="fa fa-calendar fa-2x"></i> Calendar</a>
