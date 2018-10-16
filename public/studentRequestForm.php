@@ -37,7 +37,7 @@
         <input type="text" tabindex="2" class="formInput" id="other-selection" name="otherSelection"><br><br>
 
         <label for="company">What companies or businesses are you applying for?</label><br>
-        <ul id="business-list" ?></ul>
+        <ul id="business-list"></ul>
 
         <input type="text" tabindex="3" placeholder="Business Name" class="multiple-input" id="company" name="company" >
         <i class="fa fa-plus" tabindex="4" onkeypress="newElement()" onclick="newElement()"></i><br><br>

@@ -15,14 +15,38 @@
       </div>
       <div class="section">
         <h2>Please review details before sending</h2>
-        <p>Job type: <?php echo $_POST["selectPosition"]; ?></p>
-        <p>Other job type: <?php echo $_POST["otherSelection"]; ?></p>
-        <p>Location: <?php echo $_POST["location"]; ?></p>
-        <p>Company: <?php echo $_POST["company"]; ?></p>
-        <p>Person of Contact: <?php echo $_POST["contactPerson"]; ?></p>
-        <p>Contact number: <?php echo $_POST["contactNumber"]; ?></p>
-        <p>Extra details: <?php echo $_POST["extraDetails"]; ?></p>
+        <p>Job type:
+          <?php if (isset($_POST["selectPosition"]) && !empty($_POST["selectPosition"])) {
+          echo $_POST["selectPosition"];
+        } else {
+          echo "N/A";
+        } ?>
+        </p>
+        <p>Other job type:
+          <?php if (isset($_POST["otherSelection"]) && !empty($_POST["otherSelection"])) {
+          echo $_POST["otherSelection"];
+        } else {
+          echo "N/A";
+        } ?>
+        </p>
+        <p>Company:
+          <?php if (isset($_POST["company"]) && !empty($_POST["company"])) {
+            echo $_POST["company"];
+          } else {
+            echo "N/A";
+          }?>
+        </p>
+
+        <p>Extra details:
+          <?php if (isset($_POST["extraDetails"]) && !empty($_POST["extraDetails"])) {
+            echo $_POST["extraDetails"];
+          } else {
+            echo "N/A";
+          }?>
+        </p>
+
         <p>Once you press send, you won't be able to edit your form.</p>
+
         <button type="submit" class="form-button"><a href="index.php">Send</a></button>
         <button class="form-button"><a href="studentRequestForm.php">Go back</a></button>
 

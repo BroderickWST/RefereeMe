@@ -3,6 +3,7 @@ function validateForm() {
   var studentForm = document.forms.studentForm.elements;
   var dropDown = studentForm.selectPosition;
   var otherSelection = studentForm.otherSelection;
+  var companyInput = studentForm.company;
   var formValid = true;
   var ul = document.getElementById("business-list");
   var businessList = ul.getElementsByTagName("li");
@@ -18,6 +19,16 @@ function validateForm() {
     document.getElementById("errorMsg").innerHTML = "Please select a position or other position must be filled out.";
     formValid = false;
   }
+
+  let elements = document.querySelectorAll('ul > li');
+  var companies = ""
+  for (let elem of elements) {
+    // alert(elem.innerHTML); // "test", "passed"
+    var replace = elem.innerHTML.replace(" \u00D7", ",")
+      companies += replace
+      companyInput.value = companies.slice(0, -1);
+  }
+  console.log(companies);
 
   return formValid;
 }
