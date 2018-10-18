@@ -22,6 +22,9 @@
         <h2>Referral Request Form</h2>
         <label id="errorMsg"></label><br>
 
+        <label for="select-position">Who would you like to be your referee?</label><br><br>
+        <?php include 'php/selectLecturersDropdown.php' ?><br><br>
+
         <label for="select-position">What job are you applying for?</label><br><br>
         <select size="1" id="select-position" tabindex="1" name="selectPosition">
           <option value="Select Position">Select Position</option>
