@@ -2,3 +2,4 @@
 .vagrant
 Vagrantfile
 /scotchbox
+public/php/connect.php

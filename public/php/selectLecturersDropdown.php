@@ -17,6 +17,4 @@ while ($row = $q->fetch()):
     echo "<option>" . htmlspecialchars($row['lec_name']) . "</option>";
 endwhile;
 echo "</select>";
-
-
 ?>
