@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../css/studentNavBar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/studentForm.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Confirm</title>
   </head>
   <body>
@@ -15,6 +16,13 @@
       </div>
       <div class="section">
         <h2>Please review details before sending</h2>
+        <p>Referee:
+          <?php if (isset($_POST["refereeSelect"]) && !empty($_POST["refereeSelect"])) {
+          echo $_POST["refereeSelect"];
+        } else {
+          echo "N/A";
+        } ?>
+        </p>
         <p>Job type:
           <?php if (isset($_POST["selectPosition"]) && !empty($_POST["selectPosition"])) {
           echo $_POST["selectPosition"];
