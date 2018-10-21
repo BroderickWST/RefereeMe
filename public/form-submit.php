@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/studentNavBar.css">
+    <link rel="stylesheet" href="css/studentNavBar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/studentForm.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Confirm</title>
   </head>
   <body>
-    <?php include 'php/menu.php'; ?>
+    <?php include 'php/menu_student.php'; ?>
     <div class="main">
       <div class="header">
         <h1 class="header-title">Submission</h1>

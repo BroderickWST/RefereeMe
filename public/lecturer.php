@@ -8,7 +8,7 @@
     <title>Confirm</title>
   </head>
   <body>
-    <?php include 'php/menu.php'; ?>
+    <?php include 'php/menu_lecturer.php'; ?>
 
     <div class="main">
       <div class="header">

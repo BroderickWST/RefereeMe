@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/studentForm.css">
+  <link rel="stylesheet" href="css/studentForm.css">
   <script src="js/studentFormValidation.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/studentNavBar.css">
 
@@ -11,7 +11,8 @@
 </head>
 <body>
 
-  <?php include 'php/menu.php'; ?>
+  <?php include 'php/menu_student.php'; ?>
+  <?php include 'php/connect.php'; ?>
 
   <div class="main">
     <div class="header">

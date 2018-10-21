@@ -10,7 +10,7 @@
     <title>Answer Student Request</title>
   </head>
   <body>
-    <?php include 'php/menu.php'; ?>
+    <?php include 'php/menu_lecturer.php'; ?>
     <div class="main">
       <div class="header">
         <h1 class="header-title">RefereeMe</h1>

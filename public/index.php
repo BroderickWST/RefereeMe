@@ -3,13 +3,13 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/studentNavBar.css">
-<link rel="stylesheet" href="/css/studentForm.css">
+<link rel="stylesheet" href="css/studentForm.css">
 <title>Home</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<?php include 'php/menu.php'; ?>
+<?php include 'php/menu_no-login.php'; ?>
 
 <div class="main">
   <div class="header">
@@ -21,7 +21,7 @@
         <a href="studentRequestForm.php">Student request</a>
       </button>
       <button class="form-button" type="button" name="button">
-        <a href="lecturerRequestForm.php">Lecturer request</a>
+        <a href="lecturer.php">Lecturer request</a>
       </button>
 </div>
 
