@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/studentForm.css">
     <link rel="stylesheet" href="css/studentNavBar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>.quit{margin-left: 430px; background-color: 	#FF2626 }</style>
+    <style>.deny{margin-left: 400px; background-color: 	#FF2626 }</style>
 
     <script src="js/studentFormValidation.js" charset="utf-8"></script>
     <title>Answer Student Request</title>
@@ -44,18 +44,17 @@
         <label for="recommendation">Letter of Recommendation:</label><br>
         <textarea name="recLetter" class="formInput" id="recommendation" minlength="1" rows="10" cols="100"></textarea><br><br>
 
-        <!-- Send through Student Details, so they can be recovered when users returns to this page -->
-        <input type='hidden' name='student' value='$name'>
-        <input type='hidden' name='company' value='$company'>
-        <input type='hidden' name='position' value='$position'>
-        <input type='hidden' name='location' value='$location'>
+        <input type='hidden' name='student' value='<?php echo $_POST['student']; ?>'>
+        <input type='hidden' name='company' value='<?php echo $_POST['company']; ?>'>
+        <input type='hidden' name='position' value='<?php echo $_POST['position']; ?>'>
+        <input type='hidden' name='location' value= '<?php echo $_POST['location']; ?>'>
+
 
         <button type="submit" class="form-button">Finish</button>
         <button class="form-button" type="button">
           <a href="lecturer.php">Cancel</a>
         </button>
-
-        <button class="quit form-button" type="button">
+        <button type="submit" class="deny form-button" type="button">
           <a href="request-denied.php">Deny being a Reference</a>
         </button>
       </form>

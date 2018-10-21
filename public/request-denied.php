@@ -14,7 +14,7 @@
         <h1 class="header-title">Submission</h1>
       </div>
       <div class="section">
-        <h2>You have decided to decline *Student Name*'s Reference Request</h2>
+        <h2>You have decided to decline this reference request.</h2>
         <button class="form-button"><a href="lecturer.php">Return</a></button>
       </div>
     </div>
