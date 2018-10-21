@@ -23,6 +23,7 @@ class TableRows extends RecursiveIteratorIterator {
 }
 
 try {
+
   $stmt = $conn->prepare("SELECT stu_id, lecturer_id, position, company, job_location FROM reference");
   $stmt->execute();
   $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);

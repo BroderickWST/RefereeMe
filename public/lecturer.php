@@ -17,12 +17,12 @@
       <div class="section">
         <h1>Home page</h1>
 
+        <?php include 'php/selectRequests.php' ?><br><br>
 
         <button class="form-button" type="button" name="button">
           <a href="lecturerRequestForm.php">Barry Badrinath's request</a>
         </button>
-        <?php include 'php/select_students.php'; ?>
-      </div>
+        <div>
     </div>
   </body>
 </html>

@@ -17,27 +17,14 @@
       </div>
 
       <div class="section">
-        <h2>*Student Name*'s Reference Request</h2>
+        <h2><?php echo $_POST['student']; ?>'s Reference Request</h2>
         <label id="errorMsg"></label><br>
         <div class="info-box">
           <strong>Student details</strong>
-          <p>Name</p>
-          <p>Job Type: </p>
-          <div class="flex-div">
-            <div>
-              <p>Business: </p>
-              <p>Job Location: </p>
-              <p>Person of Contact: </p>
-              <p>Contact number: </p>
-            </div>
-            <div>
-              <p>Business: </p>
-              <p>Job Location: </p>
-              <p>Person of Contact: </p>
-              <p>Contact number: </p>
-            </div>
-          </div>
-          <p>Extra details: </p>
+          <p><?php echo $_POST['student']; ?></p>
+          <p>Job Type: <?php echo $_POST['position']; ?></p>
+          <p>Business: <?php echo $_POST['company']; ?></p>
+          <p>Job Location: <?php echo $_POST['location']; ?></p>
         </div>
 
       <form name="lecturerForm" action="request-answered.php" method="post" onSubmit="return validateForm()">
