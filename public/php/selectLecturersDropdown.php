@@ -15,7 +15,7 @@ try {
 echo "<select name='refereeSelect'>";
   echo "<option value='selectLecturer'>Select Lecturer</option>";
 while ($row = $q->fetch()):
-    echo "<option>" . htmlspecialchars($row['lec_name']) . "</option>";
+    echo "<option>" . htmlspecialchars($row['name']) . "</option>";
 endwhile;
 echo "</select>";
 ?>

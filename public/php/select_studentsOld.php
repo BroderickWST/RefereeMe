@@ -2,7 +2,7 @@
 require 'connect.php';
 
 echo "<table style='border: solid 1px black;'>";
-echo "<tr><th>Student ID</th><th>Lecturer ID</th><th>Position</th><th>Company</th><th>Job Location</th></tr>";
+echo "<tr><th>Id</th><th>name</th><th>year</th><th>degree</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator {
     function __construct($it) {
@@ -23,18 +23,20 @@ class TableRows extends RecursiveIteratorIterator {
 }
 
 try {
-  $stmt = $conn->prepare("SELECT stu_id, lecturer_id, position, company, job_location FROM reference");
-  $stmt->execute();
-  $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-  foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v)
-    {
-      echo $v;
+    // set the PDO error mode to exception
+    $stmt = $conn->prepare("SELECT stu_id, name, degree FROM students");
+    $stmt->execute();
+    // echo "Connected successfully";
+    // set the resulting array to associative
+    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    foreach(new TableRowsX(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
+        echo $v;
     }
-}
+  }
 catch(PDOException $e)
     {
     echo "Connection failed: " . $e->getMessage();
     }
     $conn = null;
 echo "</table>";
-?>
+ ?>
