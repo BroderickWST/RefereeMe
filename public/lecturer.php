@@ -15,13 +15,10 @@
         <h1 class="header-title">RefereeMe</h1>
       </div>
       <div class="section">
-        <h1>Home page</h1>
+        <h2>Choose a student request to answer</h2>
 
         <?php include 'php/selectRequests.php' ?><br><br>
 
-        <button class="form-button" type="button" name="button">
-          <a href="lecturerRequestForm.php">Barry Badrinath's request</a>
-        </button>
         <div>
     </div>
   </body>
