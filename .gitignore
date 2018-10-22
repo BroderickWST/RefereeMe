@@ -1,5 +1,5 @@
 .DS_STORE
 .vagrant
 Vagrantfile
-/scotchbox
-public/php/connect.php
+/public/scotchbox
+/public/php/connect.php
