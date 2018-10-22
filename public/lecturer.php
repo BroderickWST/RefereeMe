@@ -8,19 +8,18 @@
     <title>Confirm</title>
   </head>
   <body>
-    <?php include 'php/menu.php'; ?>
+    <?php include 'php/menu_lecturer.php'; ?>
 
     <div class="main">
       <div class="header">
         <h1 class="header-title">RefereeMe</h1>
       </div>
       <div class="section">
-        <h1>Home page</h1>
-        <button class="form-button" type="button" name="button">
-          <a href="lecturerRequestForm.php">Barry Badrinath's request</a>
-        </button>
-        <?php include 'php/select_students.php'; ?>
-      </div>
+        <h2>Choose a student request to answer</h2>
+
+        <?php include 'php/selectRequests.php' ?><br><br>
+
+        <div>
     </div>
   </body>
 </html>
