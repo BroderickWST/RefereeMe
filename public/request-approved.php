@@ -17,7 +17,7 @@
       <div class="section">
         <h2>Please review details before sending</h2>
         <div class="info-box">
-          <p><?php echo $_POST['student']; ?></p>
+          <p>Student Name: <?php echo $_POST['student']; ?></p>
           <p>Role type: <?php echo $_POST["roleType"]; ?></p>
           <p>Phone: <?php echo $_POST["phoneNo"]; ?></p>
           <p>e-Mail: <?php echo $_POST["email"]; ?></p>
