@@ -1,7 +1,7 @@
 <?php
 require 'connect.php';
 try {
-  $sql = 'SELECT lecturer.name as referee, students.name as student, company, position, job_location, lecturer_approved FROM reference, lecturer, students WHERE reference.stu_id = students.stu_id AND reference.lecturer_id = lecturer.lecturer_id';
+  $sql = 'SELECT lecturer.name as referee, students.name as student, company, position, job_location, lecturer_approved, reference.id as ref_id FROM reference, lecturer, students WHERE reference.stu_id = students.stu_id AND reference.lecturer_id = lecturer.lecturer_id';
   $q = $conn->query($sql);
   $q->setFetchMode(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
@@ -16,12 +16,14 @@ while ($row = $q->fetch()):
       $company = $row['company'];
       $position = $row['position'];
       $location = $row['job_location'];
+      $ref_id = $row['ref_id'];
 
       echo "<form name='test' method='post' action='lecturerRequestForm.php'>";
       echo "<input type='hidden' name='student' value='$name'>";
       echo "<input type='hidden' name='company' value='$company'>";
       echo "<input type='hidden' name='position' value='$position'>";
       echo "<input type='hidden' name='location' value='$location'>";
+      echo "<input type='hidden' name='ref_id' value='$ref_id'>";
 
       echo "<button class='form-button' type='submit' name='button'>" . htmlspecialchars($row['student']) . "</button>";
       echo "</form>";

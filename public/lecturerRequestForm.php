@@ -49,17 +49,16 @@
         <input type='hidden' name='position' value='<?php echo $_POST['position']; ?>'>
         <input type='hidden' name='location' value= '<?php echo $_POST['location']; ?>'>
 
-
         <button type="submit" class="form-button">Finish</button>
         <button class="form-button" type="button">
           <a href="lecturer.php">Cancel</a>
         </button>
-        <button type="submit" class="deny form-button" type="button">
-          <a href="request-denied.php">Deny being a Reference</a>
-        </button>
+      </form>
+      <form name="lecturerForm" action="request-denied.php" method="post">
+        <input type='hidden' name='ref_id' value='<?php echo $_POST['ref_id']; ?>'>
+        <button type="submit" class="deny form-button">Deny being a Reference</button>
       </form>
       </div>
-      </form>
     </div>
   </body>
 </html>

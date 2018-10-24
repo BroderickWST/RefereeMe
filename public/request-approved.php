@@ -9,6 +9,7 @@
   </head>
   <body>
     <?php include 'php/menu_lecturer.php'; ?>
+    <?php include 'php/approve_request.php'; ?>
 
     <div class="main">
       <div class="header">

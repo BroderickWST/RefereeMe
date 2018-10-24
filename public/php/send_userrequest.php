@@ -30,8 +30,6 @@ try {
 
     $insert_stmt->execute();
 
-
-
  }
 catch(PDOException $e)
 {
