@@ -1,8 +1,16 @@
 <?php
 require 'connect.php';
+// This is a bit of a hack because I wanted to just use json_decode
+// This makes the post variable into a json object
 $data = json_encode($_POST);
+
+// this puts the json object into an associative array which was a nicer solution for me because I had a few values
+// associative array assigns names to values instead of numbers so not $data_array[0] but $data_array["json-prop-name"]
 $data_array = json_decode($data, true);
+// you can access values from this by using
+echo $data_array["student"];
 $lecturer_approved = 2;
+// all echoes should appear in the html element you have defined in your jquery #query-result
 echo $data;
 
 
