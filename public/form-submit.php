@@ -85,6 +85,8 @@
                 success: function (data) {
                     alert("great success!");
                     $("#query-result").html('submitted successfully:' + data);
+                    window.location.href = "http://rthosted55.com/";
+
                 },
                 error: function () {
                     alert("failure");
