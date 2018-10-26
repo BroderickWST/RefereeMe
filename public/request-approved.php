@@ -26,10 +26,34 @@
         </div>
 
         <p>Once you press send, you won't be able to edit your form.</p>
-        <button type="submit" class="form-button"><a href="index.php">Send</a></button>
+        <button id="submit" type="submit" class="form-button"><a href="index.php">Send</a></button>
         <button class="form-button"><a href="lecturer.php">Cancel</a></button>
       </div>
     </div>
+
+    <div id="query-result"></div>
+
+    <script>
+      $(document).ready(function () {
+          $("#submit").click(function () {
+              var ref_id = <?php echo $_POST['ref_id']; ?>;
+              console.log(`Summary: ${ref_id}`);
+              var stu_data = { student: `${ref_id}` };
+              $.ajax({
+                  url: "php/approve_request.php",
+                  method: "POST",
+                  data: stu_data,
+                  success: function (data) {
+                      $("#query-result").html(data);
+                      // $("#query-result").html('stu_data:' + data);
+                  },
+                  error: function () {
+                      alert("Error - Something went wrong");
+                  }
+              })
+          });
+      });
+    </script>
 
   </body>
 </html>
