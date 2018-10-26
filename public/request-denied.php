@@ -20,10 +20,6 @@
         <button id="submit" type="submit" class="form-button">Deny Request</button>
         <button class="form-button"><a href="lecturer.php">Return</a></button>
 
-<!--          How do you know if this value exists?-->
-        <p><?php echo $_POST['ref_id']; ?></p>
-
-<!--          This is used to show the result of your deny_request.php-->
         <div id="query-result"></div>
 
       </div>
@@ -31,14 +27,7 @@
     <script>
       $(document).ready(function () {
           $("#submit").click(function () {
-              // I don't know if this will work as I have been extracting textual values from html
-              // Check if this has a value by console.log(ref_id)
               var ref_id = <?php echo $_POST['ref_id']; ?>;
-
-              // In my example I am only taking the values from html which has values echoed out with php
-              // ref_id should be a html element.  Could be a class or an id
-              // which you can extract the text out of using .text()
-
               console.log(`Summary: ${ref_id}`);
               var stu_data = { student: `${ref_id}` };
               $.ajax({
@@ -46,8 +35,8 @@
                   method: "POST",
                   data: stu_data,
                   success: function (data) {
-                      // alert("Request Denied");
-                      $("#query-result").html('stu_data:' + data);
+                      $("#query-result").html(data);
+                      // $("#query-result").html('stu_data:' + data);
                   },
                   error: function () {
                       alert("Error - Something went wrong");
